@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.modEHR.ReportPageController">
+  <children>
+    <GridPane prefHeight="481.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="307.0" minWidth="10.0" prefWidth="173.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="396.0" minWidth="10.0" prefWidth="315.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="207.0" minWidth="10.0" prefWidth="112.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints maxHeight="157.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="353.0" minHeight="2.0" prefHeight="29.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="353.0" minHeight="2.0" prefHeight="29.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="411.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="390.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="390.0" minHeight="10.0" prefHeight="178.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="390.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <children>
+        <Button onAction="#backToHomePage" text="Return to Home" GridPane.columnIndex="2" />
+        <Label prefHeight="57.0" prefWidth="305.0" text="Modular EHR" textFill="#033be1">
+          <font>
+            <Font name="Times New Roman Bold" size="27.0" />
+          </font>
+        </Label>
+        <Label prefHeight="17.0" prefWidth="194.0" text="Austin Nolz" GridPane.rowIndex="1">
+          <GridPane.margin>
+            <Insets left="10.0" />
+          </GridPane.margin></Label>
+        <Label prefHeight="17.0" prefWidth="194.0" text="Male" GridPane.rowIndex="2">
+          <GridPane.margin>
+            <Insets left="10.0" />
+          </GridPane.margin></Label>
+        <Label prefHeight="17.0" prefWidth="194.0" text="05/05/1993   26 yo" GridPane.rowIndex="3">
+          <GridPane.margin>
+            <Insets left="10.0" />
+          </GridPane.margin></Label>
+        <Label prefHeight="17.0" prefWidth="201.0" text="Record created on 02/04/2020" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ScrollPane prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="3" GridPane.rowIndex="5">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+              </content>
+            </ScrollPane>
+            <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="138.0" text="Print Report" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Button>
+      </children>
+    </GridPane>
+  </children>
+</AnchorPane>
