@@ -60,7 +60,7 @@
               </rowConstraints>
                <children>
                   <Button mnemonicParsing="false" onAction="#loadPatientRecord" prefHeight="27.0" prefWidth="112.0" text="View/Edit Record" />
-                  <Button mnemonicParsing="false" text="New Record" GridPane.columnIndex="1" />
+                  <Button mnemonicParsing="false" onAction="#loadPatientRecord" text="New Record" GridPane.columnIndex="1" />
                </children>
             </GridPane>
             <ListView fx:id="recordListView" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
