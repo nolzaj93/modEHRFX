@@ -9,4 +9,4 @@ java -jar absolutePath.jar
 ```
 Here is a demo if the .jar file will not open:
 
-![Demo] (Demo.gif)
+![Demo](Demo.gif)
