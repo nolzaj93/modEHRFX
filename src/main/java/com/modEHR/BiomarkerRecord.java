@@ -14,6 +14,16 @@ public class BiomarkerRecord {
   private Biomarker progesterone;
   private Biomarker prostateSpecificAntigen;
   private Biomarker vitaminD25Hydroxy;
+  public Norms highNorms;
+  public Norms lowNorms;
+
+  public BiomarkerRecord() {
+    //If female construct highNorms with new FemaleHighNorms(), and
+    // lowNorms with new FemaleLowNorms()
+
+    //else male construct highNorms with new MaleHighNorms(), and
+    // lowNorms with new MaleLowNorms()
+  }
 
   public Date getRecordDate() {
     return recordDate;
